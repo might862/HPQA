@@ -1,0 +1,46 @@
+html,
+body {
+  overflow-x: hidden !important;
+  padding: 0;
+  margin: 0;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI", Arial, sans-serif;
+  border: none;
+}
+* {
+  box-sizing: border-box;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+table th,
+table td {
+  border: 1px solid;
+}
+table th {
+  padding: 6px 4px;
+  font-weight: bold;
+  font-size: 120%;
+}
+table td {
+  padding: 4px 4px;
+}
+.frame {
+  padding: 40px;
+}
+.search {
+  margin-bottom: 20px;
+}
+.search > input {
+  padding: 10px 20px;
+  width: 100%;
+  border: 2px solid #a4c9fa;
+  border-radius: 5px;
+}
+.search > input:focus {
+  border-color: #1a73e8;
+}
+.search > input:focus-visible {
+  outline: none;
+}

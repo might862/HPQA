@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>哈利波特題庫</title>
+  <link rel="shortcut icon" href="./img/default/favicon.ico">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+  <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1" />
+  <link rel="stylesheet" href="./css/layout.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="frame">
+      <div class="search">
+        <input type="text" v-model="keyword" placeholder="搜尋">
+      </div>
+      <table>
+        <tr>
+          <th>題目</th>
+          <th>答案</th>
+        </tr>
+        <tr v-for="item in re_list">
+          <td>{{item.q}}</td>
+          <td>{{item.a}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="./plugin/vue.2.6.11.min.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
